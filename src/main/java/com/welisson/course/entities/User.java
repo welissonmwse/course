@@ -9,16 +9,16 @@ public class User implements Serializable {
   private String name;
   private String email;
   private String phone;
-  private String passworld;
+  private String password;
 
   public User() {
   }
 
-  public User(String name, String email, String phone, String passworld) {
+  public User(String name, String email, String phone, String password) {
     this.name = name;
     this.email = email;
     this.phone = phone;
-    this.passworld = passworld;
+    this.password = password;
   }
 
   public Long getId() {
@@ -53,12 +53,12 @@ public class User implements Serializable {
     this.phone = phone;
   }
 
-  public String getPassworld() {
-    return passworld;
+  public String getPassword() {
+    return password;
   }
 
-  public void setPassworld(String passworld) {
-    this.passworld = passworld;
+  public void setPassword(String password) {
+    this.password = password;
   }
 
   @Override
